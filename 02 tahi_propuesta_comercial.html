@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAHI — Propuesta comercial estratégica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    :root{--bg:#120808;--panel:#120808;--line:#12080814;--text:#f5f5f5;--muted:#b7b7b7;--amber:#f2c14e;--neon:#f2c14e;}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0; line-height: 80%; background:
+      radial-gradient(circle at 25% 30%, rgba(242,193,78,.12), transparent 28%),
+      radial-gradient(circle at 75% 20%, rgba(255,255,255,.05), transparent 22%),
+      radial-gradient(circle at 50% 70%, rgba(124,255,107,.04), transparent 30%);
+      filter:blur(30px);animation:bgFloat 18s ease-in-out infinite alternate;pointer-events:none;}
+    @keyframes bgFloat{from{transform:translateY(0)}to{transform:translateY(-24px)}}
+    .glass{background:rgba(255,255,255,.04);backdrop-filter:blur(22px);border:1px solid var(--line);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:10vh;padding-bottom:10vh; mix-blend-mode:plus-lighter;;}
+    .hero::before{content:'';position:absolute;inset:0;background:
+      linear-gradient(rgba(0, 0, 0, 0.35),rgba(0,0,0,.55)),
+      radial-gradient(circle at center, rgba(255,255,255,.03), transparent 50%);
+      backdrop-filter:blur(4px)}
+    .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);background-size: 30px 30px;opacity:.45; mix-blend-mode: color-burn; }
+    .hero-title{font-size:clamp(10rem,30vw,26rem);font-weight:900;line-height:.85;letter-spacing:-.06em;color:var(--neon);text-shadow:0 0 0px rgba(255, 205, 90, 0.5),0 0 20px rgba(252, 230, 178, 0.533),0 0 40px rgba(242,193,78,.12);position:relative;display:inline-block;animation:flicker 5s infinite alternate}
+    .hero-title::after{content:'';position:absolute;top:0;left:-30%;width:30%;height:100%;background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);transform:skewX(-18deg);animation:sweep 6s infinite}
+    @keyframes sweep{0%{left:-30%}100%{left:130%}}
+    @keyframes flicker{0%,18%,22%,25%,53%,57%,100%{opacity:1}20%,24%,55%{opacity:.88}}
+    .reveal{opacity:0;transform:translateY(35px)}
+    .mockup-slot{height:280px;border:1px dashed rgba(255,255,255,.15);border-radius:24px;display:flex;align-items:center;justify-content:center;color:#8a8a8a;font-size:.9rem;background:rgba(255,255,255,.02) }
+    h3{text-transform: uppercase; font-weight: 400;}
+
+  </style>
+</head>
+<body class="px-6 md:px-12">
+<main class="max-w-6xl mx-auto">
+
+<section class="hero">
+  <div class="relative z-10 max-w-4xl reveal">
+    <p class="uppercase tracking-[.35em] text-sm text-stone-400 mb-6">Propuesta comercial · identidad · experiencia · ventas</p>
+    <h1 class="hero-title">TAHI</h1>
+    <h2 class="text-3xl md:text-5xl font-light mt-6 mb-8 text-stone-100 tracking-[-0.02em]">La previa empieza acá</h2>
+    <p class="text-lg md:text-2xl text-stone-300 max-w-3xl leading-relaxed">Una propuesta para transformar TAHI en un punto de encuentro más deseado, más recordable y más conectado con el público que hoy mueve sus ventas: la previa, la juntada y el brindis.</p>
+  </div>
+</section>
+
+<section class="py-10 reveal">
+  <div class="glass rounded-3xl p-8 md:p-10">
+    <h3 class="text-3xl font-bold mb-5 text-[var(--amber)]">Visión estratégica</h3>
+    <p class="text-stone-300 leading-8 text-lg">TAHI ya transmite algo valioso: cercanía, energía y calidez. La oportunidad es convertir esas sensaciones en una identidad sólida que se vea, se recuerde y se recomiende. Una marca que no solo venda bebidas, sino que acompañe momentos.</p>
+  </div>
+</section>
+
+<section class="py-8 reveal">
+  <h3 class="text-3xl font-bold mb-6 text-[var(--amber)]">Visualización conceptual integrada</h3>
+  <div class="glass rounded-2xl p-5 md:p-6 shadow-[0_0_30px_rgba(242,193,78,0.06)]">
+    <p class="text-stone-400 text-sm mt-4 leading-relaxed">Una síntesis visual de la propuesta: identidad, experiencia comercial, vidriera, mobiliario y activación estratégica. El objetivo es imaginar cómo podría sentirse TAHI cuando todos estos elementos trabajen en conjunto.</p>
+    <img src="https://raw.githubusercontent.com/Sebaeme/Tahi/b6aec5705934cff5bdef0e6615177533f90753a8/tahi.png" alt="Mockup integral TAHI"  class="w-full rounded-2xl border border-white/10" />
+  </div>
+</section>
+
+<section class="py-10 reveal">
+  <div class="glass rounded-3xl p-8 md:p-10">
+    <h3 class="text-3xl font-bold mb-5 text-[var(--amber)]">Estrategia de contenido y activación</h3>
+    <p class="text-stone-300 leading-8 mb-6">Mostrar menos producto y más momento. Hablar de la previa, del ritual de elegir qué llevar, de las juntadas y del plan que empieza antes de salir.</p>
+    <ul class="space-y-3 text-stone-300">
+      <li><strong>La previa empieza acá</strong> — pieza madre para redes y vidriera.</li>
+      <li><strong>El combo que salva la noche</strong> — promoción directa con identidad.</li>
+      <li><strong>¿Qué llevás hoy?</strong> — contenido simple, útil y cercano.</li>
+      <li><strong>Decinos tu plan y te decimos qué llevar</strong> — cercanía y recomendación.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="py-10 reveal">
+  
+  <div class="glass rounded-3xl p-8 md:p-10">
+    <h3 class="text-3xl font-bold mb-5 text-[var(--amber)]">Campaña Mundial · oportunidad inmediata</h3>
+    <p class="text-stone-300 leading-8 mb-6">El fútbol es una excusa perfecta para activar ventas y crear recordación. Una campaña pensada para conectar emoción, ritual y compra inmediata.</p>
+    <ul class="space-y-3 text-stone-300">
+      <li>⚽ <strong>La previa del partido empieza en TAHI</strong></li>
+      <li>🥂 <strong>Armá tu combo mundialero</strong></li>
+      <li>🏆 <strong>Los convocados del fin de semana</strong></li>
+      <li>📣 <strong>Hoy juega Argentina. Hoy se brinda.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section class="py-16 reveal text-center max-w-4xl mx-auto">
+  <p class="uppercase tracking-[.3em] text-stone-500 mb-4">Cierre estratégico</p>
+  <h3 class="text-4xl md:text-6xl font-black tracking-[-.04em] leading-tight text-[var(--amber)]">TAHI puede convertirse en el punto de encuentro de cada buena previa.</h3>
+  <p class="text-stone-300 text-lg leading-relaxed mt-6">Con una identidad más sólida, una experiencia más potente y una comunicación alineada con su público, TAHI puede crecer no solo como vinoteca, sino como una marca con personalidad propia.</p>
+</section>
+<img src="https://raw.githubusercontent.com/Sebaeme/Tahi/refs/heads/main/local_1.png" alt="" class="w-full rounded-2xl border border-white/10">
+
+</main>
+<script>gsap.to('.reveal',{opacity:1,y:0,duration:1.2,stagger:.15,ease:'power3.out'})</script>
+</body>
+</html>
